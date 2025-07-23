@@ -23,10 +23,18 @@ At this point, inside the via folder, create the `rules.mk` file, with the follo
 ```yaml
 VIA_ENABLE = yes
 MOUSEKEY_ENABLE = yes
-CONVERT_TO = helios
 CAPS_WORD_ENABLE = yes
+
 RGBLIGHT_ENABLE = no
 BACKLIGHT_ENABLE = no
+
+CONVERT_TO = helios
+```
+
+To enable CAPS_WORLD by clicking both left and right shift you need to add the following to config.h
+
+```c
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 ```
 
 Save it and build the firmware with the following command
