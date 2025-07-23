@@ -24,6 +24,9 @@ At this point, inside the via folder, create the `rules.mk` file, with the follo
 VIA_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 CONVERT_TO = helios
+CAPS_WORD_ENABLE = yes
+RGBLIGHT_ENABLE = no
+BACKLIGHT_ENABLE = no
 ```
 
 Save it and build the firmware with the following command
